@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: #141522;
+}
+
+.container {
+    width: 500px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.input-row{
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    width: 300px;
+    padding: 14px 28px;
+    border: 1px solid #D3D3D6;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 24px;
+    margin: 5px 1%;
+    background-color: #546FFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3D53DB;
+}
+
+.filters{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filters button{
+    background-color: #BAC8FF;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+li p {
+    flex-grow: 1;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li.completed .complete-button {
+   background-image: url("tick-circle.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.complete-button {
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    border-radius: 50%;
+}
